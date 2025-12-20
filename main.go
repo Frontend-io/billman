@@ -1,6 +1,7 @@
 package main
 
 import (
+	"billman/common"
 	"net/http"
 
 	"github.com/gin-gonic/gin"
@@ -15,5 +16,6 @@ func main() {
 		})
 	})
 
+	common.ConnectDB()
 	r.Run()
 }
